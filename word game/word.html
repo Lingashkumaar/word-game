@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="word.css">
+
+    
+    <title></title>
+</head>
+<body>
+    <div id ="main">
+
+        <div class="container">
+            <h1>WORD SCRAMBLE</h1>
+            <div class="score">SCORE: <span id="score">0</span></div>
+            <div class="time">TIME: <span id="time"><b>0</b>s</span></div>
+        </div>
+        <div class="text">
+            <div id="ans">
+                <form name="add1" >
+                    <input id="boxa1" maxlength="1" type="text" onkeyup="move(event,'','boxa1','boxa2')"></input>
+                    <input id="boxa2" maxlength="1" type="text" onkeyup="move(event,'boxa1','boxa2','boxa3')"></input>
+                    <input id="boxa3" maxlength="1" type="text" onkeyup="move(event,'boxa2','boxa3','')"></input>
+                </form>
+                <form name="add2">
+                    <input id="boxb1" maxlength="1" type="text" onkeyup="move(event,'','boxb1','boxb2')"></input>
+                    <input id="boxb2" maxlength="1" type="text" onkeyup="move(event,'boxb1','boxb2','boxb3')"></input>
+                    <input id="boxb3" maxlength="1" type="text" onkeyup="move(event,'boxb2','boxb3','boxb4')"></input>
+                    <input id="boxb4" maxlength="1" type="text" onkeyup="move(event,'boxb3','boxb4','')"></input>
+                </form>
+                <form name="add3">
+                    <input id="boxc1" maxlength="1" type="text" onkeyup="move(event,'','boxc1','boxc2')"></input>
+                    <input id="boxc2" maxlength="1" type="text" onkeyup="move(event,'boxc1','boxc2','boxc3')"></input>
+                    <input id="boxc3" maxlength="1" type="text" onkeyup="move(event,'boxc2','boxc3','boxc4')"></input>
+                    <input id="boxc4" maxlength="1" type="text" onkeyup="move(event,'boxc3','boxc4','boxc5')"></input>
+                    <input id="boxc5" maxlength="1" type="text" onkeyup="move(event,'boxc4','boxc5','')"></input>
+                </form>
+                <form name="add4">
+                    <input id="boxd1" maxlength="1" type="text" onkeyup="move(event,'','boxd1','boxd2')"></input>
+                    <input id="boxd2" maxlength="1" type="text" onkeyup="move(event,'boxd1','boxd2','boxd3')"></input>
+                    <input id="boxd3" maxlength="1" type="text" onkeyup="move(event,'boxd2','boxd3','boxd4')"></input>
+                    <input id="boxd4" maxlength="1" type="text" onkeyup="move(event,'boxd3','boxd4','boxd5')"></input>
+                    <input id="boxd5" maxlength="1" type="text" onkeyup="move(event,'boxd4','boxd5','boxd6')"></input>
+                    <input id="boxd6" maxlength="1" type="text" onkeyup="move(event,'boxd5','boxd6','')"></input>
+                </form>
+            </div>
+            <div id="qus">  
+            </div>
+            <div id="alert"></div>
+            <div class="but">
+                <button class="next"  onClick="window.location.reload()">Next Game</button>
+                <button class="end">End Game</button>
+            </div>
+        <script src="./js/spring.js"></script>
+        <script src="js/words.js" defer></script>
+        <script src="js/script.js" defer></script>
+    </div>
+    </div>
+</body>
+</html>

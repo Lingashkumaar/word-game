@@ -1,0 +1,78 @@
+.container{
+    text-align: center;
+}
+.score{
+    font-size: 30px;
+    font-weight: 800;
+}
+.time{
+    font-size: 30px;
+    font-weight: 800;
+    
+}
+#qus{
+   display: flex;
+   height: 8rem;
+   justify-content: center;
+
+}
+#qus>div{
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    width: 3rem;
+    margin: .2rem;
+    text-transform: uppercase;
+    justify-content: center;
+}
+#ans>form{
+    display: flex;
+    flex-direction: row;
+
+}
+#ans>form>input{
+    height: 5rem;
+    width: 5rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+#ans{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: end;
+    height: 30rem;
+
+}
+.qus{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+    align-items: center;
+    font-weight: 800;
+    letter-spacing: 2rem;
+}
+.but{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.next{
+    height: 3rem;
+    width: 9rem;
+    border-radius: .5rem;
+    background-color: rgb(5, 139, 5);
+}
+.end{
+    height: 3rem;
+    width: 9rem;
+    border-radius: .5rem;
+    background-color: rgb(212, 32, 32);
+}
+
